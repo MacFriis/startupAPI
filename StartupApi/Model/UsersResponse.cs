@@ -1,10 +1,9 @@
 ﻿using System;
 namespace StartupApi.Model
 {
-    public class UsersResponse
+    public class UsersResponse : PagedCollection<User>
     {
-        public UsersResponse()
-        {
-        }
+        public Form Registre { get; set; }
+        public Link Me { get; set; }
     }
 }

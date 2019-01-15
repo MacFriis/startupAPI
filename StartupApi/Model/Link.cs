@@ -29,14 +29,18 @@ namespace StartupApi.Model
 
             };
 
-        public static Link ToForm(string routeName, object routeValues = null, string method = PostMethod, params string[] relations)
-            => new Link
-            {
-                RouteName = routeName,
-                RouteValues = routeValues,
-                Method = method,
-                Relations = relations
-            };
+        public static Link ToForm(
+         string routeName,
+         object routeValues = null,
+         string method = PostMethod,
+         params string[] relations)
+         => new Link
+         {
+             RouteName = routeName,
+             RouteValues = routeValues,
+             Method = method,
+             Relations = relations
+         };
 
 
         [JsonProperty(Order = -4)]
